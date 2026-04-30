@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>www.MSBECL.com</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f0f4f8;
+      color: #222;
+    }
+
+    header {
+      background-color: #003366;
+      color: white;
+      padding: 20px 0;
+      text-align: center;
+    }
+
+    header a.MSBECLINFO {
+      font-size: 2rem;
+      font-weight: bold;
+      text-decoration: none;
+      color: white;
+      display: block;
+    }
+
+    nav.navbar ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      background-color: #005599;
+      padding: 10px 0;
+    }
+
+    nav.navbar ul li {
+      position: relative;
+      margin: 0 15px;
+    }
+
+    nav.navbar ul li a {
+      color: white;
+      text-decoration: none;
+      padding: 10px 15px;
+      display: block;
+      transition: background-color 0.3s;
+    }
+
+    nav.navbar ul li a:hover {
+      background-color: #007acc;
+      border-radius: 5px;
+    }
+
+    nav.navbar ul li ul {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background-color: #005599;
+      padding: 10px 0;
+      border-radius: 8px;
+      min-width: 200px;
+    }
+
+    nav.navbar ul li:hover > ul {
+      display: block;
+    }
+
+    nav.navbar ul li ul li {
+      margin: 0;
+    }
+
+    nav.navbar ul li ul li a {
+      padding: 10px 20px;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 2.5rem;
+      margin-top: 40px;
+      color: #003366;
+    }
+
+    /* Slider */
+    .HOME {
+      max-width: 90%;
+      margin: 40px auto;
+      overflow: hidden;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    }
+
+    #images {
+      display: flex;
+      transition: transform 0.5s ease;
+    }
+
+    #images img {
+      width: 100%;
+      height: 500px;
+      object-fit: cover;
+      flex-shrink: 0;
+    }
+
+    .indicaters {
+      display: flex;
+      justify-content: center;
+      margin: 10px 0;
+    }
+
+    .indicaters span {
+      width: 15px;
+      height: 15px;
+      background-color: #ccc;
+      margin: 0 5px;
+      border-radius: 50%;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .indicaters span.active,
+    .indicaters span:hover {
+      background-color: #007acc;
+    }
+
+    @media screen and (max-width: 768px) {
+      header a.MSBECLINFO {
+        font-size: 1.5rem;
+      }
+
+      nav.navbar ul {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      #images img {
+        height: 250px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <a href="#" class="MSBECLINFO">
+      M.S. BIDVE ENGINEERING COLLEGE,<br>LATUR-413531
+    </a>
+  </header>
+
+  <nav class="navbar">
+    <ul>
+      <li><a href="HOME.html" class="active">HOME</a></li>
+      <li><a href="#">ABOUT MSBECL</a>
+        <ul>
+          <li><a href="About Us.html">About Us</a></li>
+          <li><a href="Vision & Mission.html">Vision & Mission</a></li>
+          <li><a href="principal's Desk.html">Principal's Desk</a></li>
+          <li><a href="management.html">Management</a></li>
+          <li><a href="president.html">President Message</a></li>
+        </ul>
+      </li>
+      <li><a href="#">Departments & Faculties</a>
+        <ul>
+          <li><a href="basic s&h.html">Basic Science & Humanities</a></li>
+          <li><a href="cse.html">Computer Science and Engineering</a></li>
+          <li><a href="IT.html">Information Technology</a></li>
+          <li><a href="civil E.html">Civil Engineering</a></li>
+          <li><a href="EC.html">Electronics Engineering</a></li>
+          <li><a href="EE&EP.html">Electrical & Power Engineering</a></li>
+          <li><a href="ME.html">Mechanical Engineering</a></li>
+        </ul>
+      </li>
+      <li><a href="#">Academics</a>
+        <ul>
+          <li><a href="admission.html">Admission</a></li>
+          <li><a href="ac.html">Academic Calendar</a></li>
+        </ul>
+      </li>
+      <li><a href="gallary.html">Gallery</a></li>
+      <li><a href="#">Library/Admin</a>
+        <ul>
+          <li><a href="library.html">Library</a></li>
+          <li><a href="ats.html">Administrative Staff</a></li>
+        </ul>
+      </li>
+      <li><a href="#">TPO</a>
+        <ul>
+          <li><a href="overview.html">Overview</a></li>
+          <li><a href="ors-2021-22.html">Recruited Students 2021-22</a></li>
+          <li><a href="ors2020-21.html">Recruited Students 2020-21</a></li>
+        </ul>
+      </li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <div class="HOME">
+    <div id="images">
+      <img src="../index1.html/bidve26.jpg" alt="Image 1" />
+      <img src="../index1.html/bidve25.jpg" alt="Image 2" />
+      <img src="../index1.html/bidve27.jpg" alt="Image 3" />
+      <img src="../index1.html/girlhostel.jpg" alt="Girl Hostel" />
+      <img src="../index1.html/sboyshostel.jpg" alt="Boys Hostel" />
+    </div>
+    <div class="indicaters">
+      <span id="btn1" class="active"></span>
+      <span id="btn2"></span>
+      <span id="btn3"></span>
+      <span id="btn4"></span>
+      <span id="btn5"></span>
+    </div>
+  </div>
+
+  <h1>M.S. BIDVE ENGINEERING COLLEGE, LATUR</h1>
+
+  <script>
+    const slide = document.getElementById("images");
+    const btns = Array.from(document.querySelectorAll(".indicaters span"));
+    btns.forEach((btn, index) => {
+      btn.onclick = function () {
+        slide.style.transform = `translateX(-${index * 100}%)`;
+        btns.forEach(b => b.classList.remove("active"));
+        btn.classList.add("active");
+      };
+    });
+  </script>
+
+</body>
+</html>
