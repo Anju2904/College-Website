@@ -1,0 +1,111 @@
+*{
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana;
+    text-transform: capitalize;
+    text-decoration: none;
+}
+/*body{ 
+    min-width: 80%;
+    min-height: 600pt;
+    box-sizing: cover;
+    background-position:inherit;
+    color: black;
+    margin: auto;
+    
+
+}*/
+header{
+    position: fixed;
+    left: 0;right: 0;
+    background:purple;
+    box-shadow: 0 5px 10px rgba(0,0,0,.1);
+    padding: 0px 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    
+}
+header .MSBECLINFO{
+    font-weight:bolder;
+    font-size: 15px;
+    color:whitesmoke;
+}
+header .navbar ul
+{
+    list-style: none;
+}
+header .navbar ul li
+{
+    position: relative;
+    float: left;
+}
+header .navbar ul li a{
+    font-size: 16px;
+    padding: 20px;
+    color:white;
+    display: block;
+
+} 
+header .navbar ul li a:hover{
+    background:rgb(183, 138, 183);
+    display: block;
+    border-bottom: 2px solid black;
+}
+header .navbar ul li ul{
+    position: absolute;
+    left: 0;
+    width: 200px;
+    background:purple;
+    display:none;
+}
+header .navbar ul li ul li{
+    width: 100%;
+    border-top: 1px solid rgba(0,0,0,.1);
+}
+header .navbar ul li:hover >ul{
+    display: initial;
+}
+body{
+   /* background-image: url(../index1.html/msbecl.jpeg);*/
+   background-color: rgb(12, 8, 12);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+.HOME{
+    position: relative;
+    width: 60%;
+    height: 70vh;
+    margin: 30px auto;
+    align-items: center;
+    overflow: hidden;
+    box-shadow: -1px 12px 12px -6px rgb(200, 200, 201);
+
+}
+#images{
+    display: inline-flex;
+    width: 100%;
+    transition: 0.7s;
+}
+#images img{
+       width: 100%;
+}
+.indicaters{
+    position: absolute;
+    left: 50%;
+    bottom: 20px;
+    transform: translate(-50%);
+
+}
+.indicaters span{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: rgba(255,255,255,0.5);
+    cursor: pointer;
+}
+
+ 
