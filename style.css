@@ -1,0 +1,225 @@
+*{
+    margin: 0;padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana;
+    text-transform: capitalize;
+    text-decoration: none;
+}
+body{
+    min-width: 80%;
+    min-height: 600pt;
+    box-sizing: cover;
+    background-position:inherit;
+    color: black;
+    margin: auto;
+
+
+}
+header{
+    position: fixed;
+    left: 0;right: 0;
+    background:purple;
+    box-shadow: 0 5px 10px rgba(0,0,0,.1);
+    padding: 0px 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    
+}
+header .MSBECLINFO{
+    font-weight:bolder;
+    font-size: 15px;
+    color:whitesmoke;
+}
+header .navbar ul
+{
+    list-style: none;
+}
+header .navbar ul li
+{
+    position: relative;
+    float: left;
+}
+header .navbar ul li a{
+    font-size: 16px;
+    padding: 20px;
+    color:white;
+    display: block;
+
+} 
+header .navbar ul li a:hover{
+    background:rgb(183, 138, 183);
+    display: block;
+    border-bottom: 2px solid black;
+}
+header .navbar ul li ul{
+    position: absolute;
+    left: 0;
+    width: 200px;
+    background:purple;
+    display:none;
+}
+header .navbar ul li ul li{
+    width: 100%;
+    border-top: 1px solid rgba(0,0,0,.1);
+}
+header .navbar ul li:hover >ul{
+    display: initial;
+}
+.rightnav{
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: auto;
+    max-width: 90%;
+
+}
+.leftnav{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: auto;
+    max-width: 90%;
+    flex-direction: row-reverse;
+}
+/*.HOME{
+    display: flex;
+    flex-direction: column;
+     background-image: url(../Mummy/BIDVE.jpeg);
+     background-repeat: no-repeat;
+     background-size: cover;
+     justify-content: center;
+}*/
+#About{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color:white;
+    font-size: 20px;
+}
+#Mission{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cse{
+    list-style: circle;
+
+}
+.csemain{
+    padding: 20px;
+    margin: 10px;
+}
+.Vision{
+    padding: 10px;
+    margin: 10px;  
+}
+.Itmain{
+    padding: 20px;
+    margin: 10px;
+}
+.latur{
+    padding: 10px;
+}
+.insta{
+    text-align: left;
+}
+.map{
+    margin-right: 15px;;
+}
+.Civil{
+    padding: 20px;
+    margin: 10px; 
+}
+.EC{
+    padding: 20px;
+    margin: 10px; 
+}
+.ECE{
+    padding: 20px;
+    margin: 10px; 
+}
+.MC{
+    padding: 20px;
+    margin: 10px;  
+}
+.ad{
+    padding: 20px;
+    margin: 10px;
+}
+.ac{
+    padding: 20px;
+    margin: 10px;  
+}
+.box{
+    display: block;
+    float: left;
+    padding: 10px;
+}
+.img{
+    width: 100%;
+}
+.library{
+    padding: 20px;
+    margin: 10px;  
+}
+.tpo{
+    padding: 20px;
+    margin: 10px;  
+}
+.ats{
+    padding: 20px;
+    margin: 10px;
+}
+.placement{
+    padding: 20px;
+    margin: 10px;
+}
+.us{
+    padding: 20px;
+    margin: 10px;
+}
+.fees{
+    
+    text-align: center;
+}
+.contact{
+    margin: 10px;
+    padding: 200px;
+}
+.cbox{
+    box-shadow: -1px 12px 12px -6px rgba(0,0,0.5);
+
+margin-left: 650px;
+height: 350px;
+width: 600px;
+border: 5px solid black;
+}
+.cbox p{
+    padding:  60px 50px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
